@@ -44,5 +44,8 @@ sed -i -e 's|listen = 127.0.0.1:9000|listen = /var/run/php-fpm/php5-fpm.sock|' /
 sed -i -e 's|fastcgi_pass   127.0.0.1:9000;|fastcgi_pass   unix:/var/run/php-fpm/php5-fpm.sock;|' /etc/nginx/nginx.conf
 
 systemctl restart nginx
+
 systemctl restart php-fpm
+
+curl -i localhost
 

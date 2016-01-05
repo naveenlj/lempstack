@@ -2,7 +2,7 @@
 
 set -x 
 
-yum install epel-release
+yum -y install epel-release
 
 yum install nginx -y
 
